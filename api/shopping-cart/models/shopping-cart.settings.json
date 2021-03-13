@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shopping_carts",
+  "info": {
+    "name": "ShoppingCart"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "site_user": {
+      "model": "site-users",
+      "via": "shopping_cart"
+    }
+  }
+}

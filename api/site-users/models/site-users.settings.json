@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "site_users",
+  "info": {
+    "name": "SiteUsers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "shopping_cart": {
+      "via": "site_user",
+      "model": "shopping-cart"
+    }
+  }
+}
